@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Questmaster About</title>
+
+    <link rel="stylesheet" href="{% static 'css/aboutstyle.css' %}">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <a href="{% url 'home' %}">
+                <img class="logo" src="{% static 'images/Logo2.png' %}" alt="Infinite Questmaster Logo">
+            </a>
+            <div class="login">
+                <a href="{% url 'login2' %}" class="login-link">
+                    <img src="{% static 'images/User_icon.png' %}" alt="User Icon">
+                    <span>Login</span>
+                </a>
+            </div>
+        </div>
+    <div class="background-gradient">
+        <div class="container">
+        <header>
+            <h1>INFINITE QUESTMASTER</h1>
+            <h1>AI-POWERED DUNGEON DELVING</h1>
+        </header>  
+        <br><br>
+        <div>
+            <p>
+                Infinite Questmaster is a generated text adventure website using artificial intelligence. It help users create interactive narratives for role-playing games that are played on tables. In order to develop and explore dynamic and unpredictable gaming settings, users can interact with an AI dungeon master.
+            </p>
+            <br><br>
+            <hr style="margin: 0;">
+        </div>
+        <br>
+        <div>
+            <p>
+                Tabletop role-playing games (TTRPGs) have always been about shared storytelling and imaginative adventures. Players create characters and embark on quests guided by a game master who sets the scene and reacts to their choices. However, being a game master can be challenging, requiring creativity and quick thinking to keep the story engaging. With the rise of AI technology, there's an opportunity to lighten the load on game masters by using AI to help with storytelling.
+            </p>
+            <br><br>
+            <hr style="margin: 0;">
+        </div>
+        <br>
+        <div>
+            <p>
+                Infinite Questmaster: AI-Powered Dungeon Delving, aims to explore this intersection of AI and tabletop RPGs where players can embark on adventures guided by an AI dungeon master. The goal is to make storytelling in RPGs even more immersive and accessible, allowing players to experience endless adventures in the world of Infinite Questmaster.
+            </p>
+            <br><br>
+            <hr style="margin: 0;">
+        </div>
+        
+    </div>
+    
+        <footer>
+            <p>© 2024 Infinite Questmaster</p>
+        </footer>
+    </div>
+</body>
+</html>
