@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
@@ -32,5 +32,6 @@ urlpatterns = [
     path('account2/', views.account2, name='account2'),
     path('account3/', views.account3, name='account3'),
     path('feedback/', views.feedback, name='feedback'),
+    path('chatbot/', views.chatbot, name='chatbot'),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

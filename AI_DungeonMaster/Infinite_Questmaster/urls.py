@@ -10,4 +10,5 @@ urlpatterns = [
     path('', views.account2, name='account2'),
     path('', views.account3, name='account3'),    
     path('', views.feedback, name='feedback'),
+    path('', views.chatbot, name='chatbot'),
 ]
