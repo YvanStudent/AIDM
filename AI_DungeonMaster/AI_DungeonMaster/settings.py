@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Infinite_Questmaster',
 ]
 
 MIDDLEWARE = [
@@ -52,15 +53,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'AI_DungeonMaster.urls'
 
+# Define the template directory path relative to the BASE_DIR
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'Infinite_Questmaster', 'templates')
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-
-            # ============= note: Change location or look for something better that it will be stored in much more dynamic place ======
-
-            'E:/AIDM2/AI_DungeonMaster/Infinite_Questmaster/templates',
-
+            TEMPLATE_DIR,  # Use the TEMPLATE_DIR variable here
             # Other template directories if any
         ],
         'APP_DIRS': True,
@@ -131,9 +131,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'Infinite_Questmaster', 'static'),
 ]
 
- # ============= note: Change location or look for something better that it will be stored in much more dynamic place ======
-STATIC_ROOT = 'E:/AIDM2/AI_DungeonMaster/AI_DungeonMaster/static_root'
-
+# Define the static root directory path relative to the BASE_DIR
+STATIC_ROOT = os.path.join(BASE_DIR, 'AI_DungeonMaster', 'static_root')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
